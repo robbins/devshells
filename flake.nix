@@ -12,6 +12,10 @@
         path = ./c;
         description = "C development environment";
       };
+      "java" = {
+        path = ./java;
+        description = "Java development environment with JDT language server";
+      };
     };
   };
 }
