@@ -19,7 +19,7 @@
       let pkgs = nixpkgsFor.${system};
       in {
         default = pkgs.mkShell {
-          buildInputs = [ 
+          packages = [
             pkgs.jdk 
             language-servers.packages.${system}.jdt-language-server 
           ];

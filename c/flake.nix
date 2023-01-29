@@ -15,7 +15,7 @@
       let pkgs = nixpkgsFor.${system};
       in {
         default = pkgs.mkShell {
-          buildInputs = with pkgs; [ clang-tools clang gdb valgrind gnumake ];
+          packages = with pkgs; [ clang-tools clang gdb valgrind gnumake ];
         };
       });
   };
